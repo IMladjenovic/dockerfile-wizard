@@ -15,7 +15,7 @@ jobs:
       # Login to dockerhub
       - run:
           name: Login to Docker Hub
-          command: docker login -u $DOCKER_USERNAME --password-stdin $DOCKER_PASSWORD
+          command: echo "$DOCKER_PASSWORD" | docker login -u $DOCKER_USERNAME --password-stdin
 
       # Build and push Docker image
       - run:
