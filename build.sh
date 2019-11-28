@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 IMAGE_NAME="terraform-aws"
-TAG="0.11.14"
+TAG="0.12.16"
 DOCKER_USERNAME=ivanmladjenovic
 
 docker build -t ${IMAGE_NAME} . && \
